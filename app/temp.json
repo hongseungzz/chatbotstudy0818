@@ -1,8 +1,7 @@
 {
     "bot":{
        "id":"62fc342070055f434dcd3a3b!",
-       "name":"KBO선수 
- 기록 알림봇"
+       "name":"KBO선수 기록 알림봇"
     },
     "intent":{
        "id":"62fc6558fb4d7520b2bbee0b",
