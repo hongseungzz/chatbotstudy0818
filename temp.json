@@ -1,0 +1,54 @@
+{
+    "bot":{
+       "id":"62fc342070055f434dcd3a3b!",
+       "name":"KBO선수 
+ 기록 알림봇"
+    },
+    "intent":{
+       "id":"62fc6558fb4d7520b2bbee0b",
+       "name":"단순 인사",
+       "extra":{
+          "reason":{
+             "code":1,
+             "message":"OK"
+          }
+       }
+    },
+    "action":{
+       "id":"62fc6512f534cf44c78eee01",
+       "name":"단순 텍스트 응답",
+       "params":{
+          
+       },
+       "detailParams":{
+          
+       },
+       "clientExtra":{
+          
+       }
+    },
+    "userRequest":{
+       "block":{
+          "id":"62fc6558fb4d7520b2bbee0b",
+          "name":"단순 인사"
+       },
+       "user":{
+          "id":"4dcadc752c8f58d9a057001b831fc9afcca5ea726b128403e972865097f23c2c48",
+          "type":"botUserKey",
+          "properties":{
+             "botUserKey":"4dcadc752c8f58d9a057001b831fc9afcca5ea726b128403e972865097f23c2c48",
+             "bot_user_key":"4dcadc752c8f58d9a057001b831fc9afcca5ea726b128403e972865097f23c2c48"
+          }
+       },
+       "utterance":"하이\n",
+       "params":{
+          "surface":"BuilderBotTest",
+          "ignoreMe":"true"
+       },
+       "lang":"kr",
+       "timezone":"Asia/Seoul"
+    },
+    "contexts":[
+       
+    ]
+ }
