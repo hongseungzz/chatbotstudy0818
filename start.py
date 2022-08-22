@@ -50,3 +50,5 @@ def index():
 if __name__ == "__main__":
     db_create()
     # db_select()
+ 
+    app.run()
