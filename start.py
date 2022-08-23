@@ -25,17 +25,15 @@ def db_create():
     data.to_sql(name='dreamspon', con=engine, schema = 'public', if_exists='replace', index=False)
 
 
-def db_select(choice,choice1):
+def db_select(choice):
     list=[]
-    # choice="\'생활비지원'"
-    # choice1="\'%%대학생%%'"
-    result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE {0} AND who like {1} ".format(choice,choice1))  
+    # choice="\'이름'"
+    result= engine.execute("SELECT name, url FROM dreamspon WHERE name LIKE {0}".format(choice))  
     for r in result:
         list.append(str(r))
        
-   
-    print(list[1])
-    print(list[2])
+    
+    print(list[0])
     return list
 
 

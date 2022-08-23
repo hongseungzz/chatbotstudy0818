@@ -495,8 +495,59 @@ def recommen2d():
     return responseBody
 
 
-
+# 장학금 조회
 @app.route('/api/Lookup', methods=['POST'])
 def Lookup():
     body = request.get_json()
     print(body)
+    # 카카오 챗봇에서 보낸 요청값을 body에 저장
+    name=body['action']['detailParams']['name']['value']
+    print(name)
+    # 사용자 발화값 중 입력값을 받기 위함
+    list_n=start.db_select(name)
+    # db_select함수에 name값 입력
+
+
+    if len(list_n) > 0:
+        responseBody = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                     {
+                        "simpleText": {
+                            
+                            "text": "조회하신 장학금입니다"
+                            },
+                    },
+                    
+                    {
+                    "carousel": {
+                    "type": "basicCard",        
+                    "items": [
+                        {
+                        "title": list_n[0],
+                        "description": "장학금 조회"
+                        "thumbnail": {
+                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%881.jpg?raw=true",
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list_n[1]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"
+
+                            }
+                        ]
+                        }
+                    ]      
+                    }    
+                }
+                ]
+            }  
+        }
+
+        return responseBody
