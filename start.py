@@ -34,6 +34,7 @@ def db_select(choice):
        
     
     print(list[0])
+    print(list[1])
     return list
 
 
