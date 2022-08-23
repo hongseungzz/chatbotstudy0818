@@ -27,8 +27,8 @@ def db_create():
 
 def db_select(choice):
     list=[]
-    # choice="\'이름'"
-    result= engine.execute("SELECT name, url FROM dreamspon WHERE name LIKE {0}".format(choice))  
+    # choice="\'%%이름%%'"
+    result= engine.execute("SELECT name, url FROM dreamspon WHERE name LIKE '%{}%';".format(choice))  
     for r in result:
         list.append(str(r))
        
