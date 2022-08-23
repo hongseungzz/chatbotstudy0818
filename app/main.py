@@ -514,7 +514,7 @@ def Lookup():
     URL=df1['url']
     # df1이라는 데이터프레임의 'url'컬럼값을 series형식으로 저장
 
-    if len(list_n) > 0:
+    if len(df1) > 0:
         responseBody = {
             "version": "2.0",
             "template": {
