@@ -566,7 +566,7 @@ def Lookup():
                     "items": [
                         {
                         "title": list_n[0],
-                        "description": "장학금 조회"
+                        "description": "장학금 조회",
                         "thumbnail": {
                             "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%881.jpg?raw=true",
                         },
