@@ -3,6 +3,8 @@
 from flask import Flask
 import pandas as pd
 from sqlalchemy import create_engine
+import psycopg2
+
 engine = create_engine("postgresql://tojvmfkykntpsj:b6f38303928fbc29ae4debc556f872a08434cc7bc943ad3f7feec76b7d66926d@ec2-54-86-106-48.compute-1.amazonaws.com:5432/dbtl4309937sq8", echo = False)
 
 engine.connect()
