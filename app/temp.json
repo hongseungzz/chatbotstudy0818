@@ -1,53 +1,57 @@
 {
-    "bot":{
-       "id":"62fc342070055f434dcd3a3b!",
-       "name":"KBO선수 기록 알림봇"
-    },
-    "intent":{
-       "id":"62fc6558fb4d7520b2bbee0b",
-       "name":"단순 인사",
-       "extra":{
-          "reason":{
-             "code":1,
-             "message":"OK"
-          }
-       }
-    },
-    "action":{
-       "id":"62fc6512f534cf44c78eee01",
-       "name":"단순 텍스트 응답",
-       "params":{
-          
-       },
-       "detailParams":{
-          
-       },
-       "clientExtra":{
-          
-       }
-    },
-    "userRequest":{
-       "block":{
-          "id":"62fc6558fb4d7520b2bbee0b",
-          "name":"단순 인사"
-       },
-       "user":{
-          "id":"4dcadc752c8f58d9a057001b831fc9afcca5ea726b128403e972865097f23c2c48",
-          "type":"botUserKey",
-          "properties":{
-             "botUserKey":"4dcadc752c8f58d9a057001b831fc9afcca5ea726b128403e972865097f23c2c48",
-             "bot_user_key":"4dcadc752c8f58d9a057001b831fc9afcca5ea726b128403e972865097f23c2c48"
-          }
-       },
-       "utterance":"하이\n",
-       "params":{
-          "surface":"BuilderBotTest",
-          "ignoreMe":"true"
-       },
-       "lang":"kr",
-       "timezone":"Asia/Seoul"
-    },
-    "contexts":[
-       
-    ]
- }
+   "bot":{
+      "id":"630328f01a9f56382d2666ff!",
+      "name":"프로젝트봇"
+   },
+   "intent":{
+      "id":"63034245bda32f3914d2e783",
+      "name":"장학금 조회",
+      "extra":{
+         "reason":{
+            "code":1,
+            "message":"OK"
+         }
+      }
+   },
+   "action":{
+      "id":"63033a67bda32f3914d2e660",
+      "name":"장학금 조회",
+      "params":{
+         "name":"월성원자력 주변지역 장학"
+      },
+      "detailParams":{
+         "name":{
+            "groupName":"",
+            "origin":"월성원자력",
+            "value":"월성원자력 주변지역 장학"
+         }
+      },
+      "clientExtra":{
+         
+      }
+   },
+   "userRequest":{
+      "block":{
+         "id":"63034245bda32f3914d2e783",
+         "name":"장학금 조회"
+      },
+      "user":{
+         "id":"4dd5b311334c16846df642a6e5581d0ae4a5ea726b128403e972865097f23c2c48",
+         "type":"botUserKey",
+         "properties":{
+            "botUserKey":"4dd5b311334c16846df642a6e5581d0ae4a5ea726b128403e972865097f23c2c48",
+            "bot_user_key":"4dd5b311334c16846df642a6e5581d0ae4a5ea726b128403e972865097f23c2c48"
+         }
+      },
+      "utterance":"월성원자력",
+      "params":{
+         "surface":"BuilderBotTest",
+         "ignoreMe":"true"
+      },
+      "lang":"kr",
+      "timezone":"Asia/Seoul"
+   },
+   "contexts":[
+      
+   ]
+}
