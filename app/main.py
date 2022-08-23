@@ -548,5 +548,5 @@ def Lookup():
                 ]
             }  
         }
-        
-        return responseBody
+
+    return responseBody
