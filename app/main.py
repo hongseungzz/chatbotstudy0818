@@ -539,7 +539,7 @@ def Lookup():
                         "buttons": [
                             {
                             "action":"webLink",
-                            "label": "구경하기",
+                            "label": "장학금 정보 보기",
                             "webLinkUrl": URL[0]
                             },
                             {
