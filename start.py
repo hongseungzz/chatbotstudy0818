@@ -52,7 +52,7 @@ def area_db(naming):
     rows = cur.fetchall() 
     # 데이터내용 전부 불러서 rows에 입력
     # list 타입
-    df = pd.DataFrame(rows, columns = ['name','url'])
+    df = pd.DataFrame(rows, columns = ['name', 'advantage', 'who', 'age', 'where1', 'qualification', 'url'])
     #print(df)
     # DataFrame으로 만들어주기
     # 컬럼명을 지정
