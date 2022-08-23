@@ -555,5 +555,31 @@ def Lookup():
                 ]
             }  
         }
+    else :
+        responseBody = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                    "carousel": {
+                    "type": "basicCard",        
+                    "items": [
+                        {
+                        "title": "해당 장학금의 정보가 없습니다",
+                        },
+                    ],
+                    "buttons": [
+                         {
+                            "action":"webLink",
+                            "label": "다른 장학금 정보 보기",
+                            "webLinkUrl": "https://www.dreamspon.com/scholarship/list.html#"
+                         },
+                    ]
+                    }
+                }
+            ]      
+            }   
+        }
+            
 
     return responseBody
