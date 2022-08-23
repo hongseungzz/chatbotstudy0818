@@ -548,45 +548,5 @@ def Lookup():
                 ]
             }  
         }
-    else:
-        responseBody = {
-            "version": "2.0",
-            "template": {
-                "outputs": [
-                     {
-                        "simpleText": {
-                            
-                            "text": "없음"
-                            },
-                    },
-
-                    {
-                    "carousel": {
-                    "type": "basicCard",        
-                    "items": [
-                        {
-                        "title": list_n[0],
-                        "description": "장학금 조회",
-                        "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%881.jpg?raw=true",
-                        },
-                        "buttons": [
-                            {
-                            "action":"webLink",
-                            "label": "구경하기",
-                            "webLinkUrl": list_n[1]
-                            },
-                            {
-                            "action": "share",
-                            "label": "공유하기"
-
-                            }
-                        ]
-                        }
-                    ]      
-                    }    
-                }
-                ]
-            }  
-        }
+        
         return responseBody
