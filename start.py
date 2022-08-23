@@ -37,16 +37,3 @@ def db_select(choice):
     return list
 
 
-app = Flask(__name__)
-
-@app.route("/")
-def index():
-    # db_create()
-    return "Hello World!"
-
-
-if __name__ == "__main__":
-    db_create()
-    # db_select()
- 
-    app.run()
