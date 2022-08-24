@@ -5,7 +5,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 import psycopg2
 
-engine = create_engine("postgresql://tojvmfkykntpsj:b6f38303928fbc29ae4debc556f872a08434cc7bc943ad3f7feec76b7d66926d@ec2-54-86-106-48.compute-1.amazonaws.com:5432/dbtl4309937sq8", echo = False)
+engine = create_engine("postgresql://oorbpqoyofkzzz:cf8f09e5eb71660cfca525b431d2029c9753ca80962c0f9f8241192dca533481@ec2-52-207-15-147.compute-1.amazonaws.com:5432/dejcqpc36a8hi6", echo = False)
 
 engine.connect()
 
@@ -40,7 +40,7 @@ def db_select(choice):
 
 def area_db(naming):
 # 입력된 이름이 포함된 행을 불러오는 함수
-    conn = psycopg2.connect(host="ec2-54-86-106-48.compute-1.amazonaws.com", dbname="dbtl4309937sq8", user="tojvmfkykntpsj", password="b6f38303928fbc29ae4debc556f872a08434cc7bc943ad3f7feec76b7d66926d")
+    conn = psycopg2.connect(host="ec2-52-207-15-147.compute-1.amazonaws.com", dbname="dejcqpc36a8hi6", user="oorbpqoyofkzzz", password="cf8f09e5eb71660cfca525b431d2029c9753ca80962c0f9f8241192dca533481")
     # heroku에 배포되어 있는 데이터베이스에 접속하기
     cur = conn.cursor()
     # cursor = 임시 객체생성
