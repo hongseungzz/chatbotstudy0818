@@ -27,17 +27,6 @@ def db_create():
     data.to_sql(name='dreamspon', con=engine, schema = 'public', if_exists='replace', index=False)
 
 
-def db_select(choice):
-    list=[]
-    # choice="\'%%이름%%'"
-    result= engine.execute("SELECT name, url FROM dreamspon WHERE name LIKE '%%{}%%';".format(choice))
-    for r in result:
-        list.append(str(r))
-       
-    
-    return list
-
-
 def area_db(naming):
 # 입력된 이름이 포함된 행을 불러오는 함수
     conn = psycopg2.connect(host="ec2-52-207-15-147.compute-1.amazonaws.com", dbname="dejcqpc36a8hi6", user="oorbpqoyofkzzz", password="cf8f09e5eb71660cfca525b431d2029c9753ca80962c0f9f8241192dca533481")
