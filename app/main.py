@@ -536,7 +536,7 @@ def Lookup():
                         "title": name[0],
                         "description": "장학금 조회",
                         "thumbnail": {
-                        "imageUrl": image[0]
+                            "imageUrl": image[0]
                         },
                         "buttons": [
                             {
