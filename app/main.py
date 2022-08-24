@@ -513,6 +513,8 @@ def Lookup():
     # df1이라는 데이터프레임의 'name'컬럼값을 series형식으로 저장
     URL=df1['url']
     # df1이라는 데이터프레임의 'url'컬럼값을 series형식으로 저장
+    image=df1['image']
+    # df1이라는 데이터프레임의 'image'컬럼값을 series형식으로 저장
 
     if len(df1) > 0:
         responseBody = {
@@ -534,7 +536,7 @@ def Lookup():
                         "title": name[0],
                         "description": "장학금 조회",
                         "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%885.jpg?raw=true"
+                        "imageUrl": image[0]
                         },
                         "buttons": [
                             {
